@@ -5,7 +5,7 @@ API example with Deno, Oak and mongodb
 ## Getting Started
 
 ```
-deno run --unstable --allow-plugin --allow-read --allow-write --allow-net index.ts
+deno run --unstable --allow-plugin --allow-read --allow-write --allow-net src/index.ts
 ```
 
 
