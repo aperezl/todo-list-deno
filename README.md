@@ -16,7 +16,7 @@ deno run --unstable --allow-plugin --allow-read --allow-write --allow-net src/in
 GET http://localhost:1337/todos
 ```
 
-### GEt Todo
+### Get Todo
 ```
 GET http://localhost:1337/todos/:todoId
 ```
