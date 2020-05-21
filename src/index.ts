@@ -1,7 +1,6 @@
-import { Application, Context } from 'https://deno.land/x/oak/mod.ts'
+import { Application } from './deps.ts'
+import { config, exists } from './deps.ts'
 import router from './routes.ts'
-import { config } from 'https://deno.land/x/dotenv/mod.ts'
-import { exists } from 'https://deno.land/std@0.51.0/fs/mod.ts'
 
 const app = new Application()
 const existsEnv = await exists('./.env')

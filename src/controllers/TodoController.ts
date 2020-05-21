@@ -1,6 +1,6 @@
 import TodoService from '../services/TodoService.ts'
 import ITodo from '../entities/ITodo.ts'
-import { RouterContext } from 'https://deno.land/x/oak/mod.ts'
+import { RouterContext } from '../deps.ts'
 
 const todoService = new TodoService()
 

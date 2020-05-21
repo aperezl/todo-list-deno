@@ -1,6 +1,6 @@
 import { config } from 'https://deno.land/x/dotenv/mod.ts'
-import { MongoClient } from 'https://deno.land/x/mongo/mod.ts'
-import { exists } from 'https://deno.land/std@0.51.0/fs/mod.ts'
+import { MongoClient } from '../deps.ts'
+import { exists } from '../deps.ts'
 
 const existsEnv = await exists('./.env')
 
