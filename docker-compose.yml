@@ -1,0 +1,18 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    command: ["--bind_ip_all"]
+    ports:
+      - "27017:27017"
+  todo-list-deno:
+    depends_on: 
+      - mongo
+    environment:
+      - MONGOURI=mongodb://mongo:27017
+      - PORT=1337
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1337:1337"
