@@ -8,6 +8,12 @@ API example with Deno, Oak and mongodb
 deno run --unstable --allow-plugin --allow-read --allow-write --allow-net src/index.ts
 ```
 
+### Run with docker
+
+```
+docker-compose up
+```
+
 
 ## Methods
 
