@@ -1,17 +1,17 @@
-import { config } from 'https://deno.land/x/dotenv/mod.ts'
-import { MongoClient } from '../deps.ts'
-import { exists } from '../deps.ts'
+import { config } from "https://deno.land/x/dotenv/mod.ts";
+import { MongoClient } from "../deps.ts";
+import { exists } from "../deps.ts";
 
-const existsEnv = await exists('./.env')
+const existsEnv = await exists("./.env");
 
-let MONGOURI 
+let MONGOURI;
 if (existsEnv) {
-  MONGOURI =  config().MONGOURI
+  MONGOURI = config().MONGOURI;
 } else {
-  MONGOURI = 'mongodb://localhost:27017'
+  MONGOURI = "mongodb://localhost:27017";
 }
-const client = new MongoClient()
-client.connectWithUri(MONGOURI)
-const db = client.database('todos')
+const client = new MongoClient();
+client.connectWithUri(MONGOURI);
+const db = client.database("todos");
 
-export default db
+export default db;

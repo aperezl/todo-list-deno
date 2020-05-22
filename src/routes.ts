@@ -1,19 +1,19 @@
-import { Router } from './deps.ts'
+import { Router } from "./deps.ts";
 import {
   getTodos,
   createTodo,
   getTodo,
   updateTodo,
-  deleteTodo
- } from './controllers/TodoController.ts'
+  deleteTodo,
+} from "./controllers/TodoController.ts";
 
-const router = new Router()
+const router = new Router();
 
 router
-  .get('/todos', getTodos)
-  .post('/todos', createTodo)
-  .get('/todos/:todoId', getTodo)
-  .put('/todos/:todoId', updateTodo)
-  .delete('/todos/:todoId', deleteTodo)
+  .get("/todos", getTodos)
+  .post("/todos", createTodo)
+  .get("/todos/:todoId", getTodo)
+  .put("/todos/:todoId", updateTodo)
+  .delete("/todos/:todoId", deleteTodo);
 
-export default router
+export default router;
